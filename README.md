@@ -1,40 +1,174 @@
 # Klawio Website Audit System
 
-A lightweight performance & SEO auditing engine powered by:
-- Google PageSpeed API (Performance)
-- Klawio SEO Engine (Custom 100-point SEO scoring)
-- Auto email reporting
-- Fully PHP-based backend (no Composer required)
-- Works on shared hosting
+A fast, lightweight and open-source Website Audit Tool combining:
 
-This project is part of **Klawio Web Agency's automation suite**.
+Google Lighthouse Performance Score (via PageSpeed API)
 
----
+Klawio 100-Point SEO Engine (custom scoring)
 
-## 🚀 Features
+Mobile performance score
 
-### 🔍 Audit Engine
-✔ Performance score (Google Lighthouse)  
-✔ Mobile performance  
-✔ Klawio SEO scoring (100 points)  
-✔ Meta tags parsing  
-✔ Missing tags detection  
-✔ Image ALT scanning  
-✔ Sitemap & robots.txt check  
-✔ Key Findings output  
+Key Findings engine
 
-### 📧 Email Reporting
-✔ Audit result sent to customer  
-✔ Audit copy sent to admin  
-✔ Clean HTML email template  
+Automatic email reporting
 
-### 🌐 Frontend
-✔ Simple embed-ready HTML widget  
-✔ JavaScript form handler  
-✔ Minimalistic UI  
-✔ Easily insert into WordPress / Elementor / Divi  
+Fully PHP backend (no Composer needed)
 
----
+Simple embeddable frontend
 
-## 📁 Project Structure
+Perfect for agencies, freelancers, and SaaS builders looking to offer free website audits as a lead generator.
 
+🚀 Features
+🧪 Performance Auditing
+
+Google Lighthouse performance score
+
+Mobile-mode scanning
+
+Server latency info
+
+Overall Klawio score calculation
+
+🔍 Klawio SEO Engine (100 points)
+
+Includes checks for:
+
+<title> tag
+
+Meta description
+
+<h1> existence
+
+Canonical tag
+
+OG title / description
+
+Robots.txt
+
+Sitemap.xml
+
+Image ALT attributes
+
+Keyword density (basic)
+
+Noindex detection
+
+📧 Email Report
+
+Audit emailed to the user
+
+Copy emailed to admin
+
+HTML formatted report
+
+🌐 Frontend
+
+Simple HTML widget
+
+JavaScript fetch handler
+
+Minimal, clean UI
+
+Easy to embed in WordPress / Elementor / Divi / any site
+
+🖥 Backend
+
+Pure PHP
+
+No framework
+
+No dependencies
+
+Works on any shared hosting
+
+Secure config file
+
+Clean JSON API output
+
+📁 Project Structure
+klawio-website-audit-system/
+│
+├── api/
+│   ├── api.php               (Main backend)
+│   ├── sample.config.php     (Template for user credentials)
+│
+├── web/
+│   ├── index.html            (Demo UI)
+│   ├── audit.js              (Frontend logic)
+│   ├── audit.css             (Optional styles)
+│
+└── README.md
+
+🛠 Installation
+1️⃣ Clone the repository
+git clone https://github.com/mhakantatlici/klawio-website-audit-system
+
+2️⃣ Create your config
+
+Go to the api folder.
+
+Copy:
+
+sample.config.php → config.php
+
+
+Fill in:
+
+Your Google PageSpeed API Key
+
+SMTP sender email
+
+Your admin email
+
+3️⃣ Upload to hosting
+
+Any shared hosting or VPS works.
+Requires only:
+
+PHP 7.4+
+
+cURL enabled
+
+4️⃣ Test API
+
+Go to:
+
+yourdomain.com/api/api.php
+
+
+Expected output:
+
+{"error":"URL and email are required"}
+
+🧪 Using the Audit UI
+
+The frontend demo is inside /web.
+
+You can embed index.html directly or copy the form + audit.js into any website (including WordPress).
+
+🧩 API Endpoint
+
+POST to:
+
+/api/api.php
+
+Body (x-www-form-urlencoded):
+url=https://example.com
+email=user@example.com
+
+JSON Response:
+{
+  "status": "ok",
+  "overall_score": 78,
+  "performance_score": 66,
+  "seo_score": 83,
+  "mobile_score": 66,
+  "findings": [...],
+  "email_sent": true
+}
+
+📝 License
+
+MIT License © 2025 Klawio Web Agency
+
+This project is free to use, modify, and integrate into commercial SaaS products.
