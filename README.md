@@ -33,11 +33,11 @@ Overall Klawio score calculation
 
 Includes checks for:
 
-<title> tag
+title tag
 
 Meta description
 
-<h1> existence
+h1 existence
 
 Canonical tag
 
