@@ -1,0 +1,13 @@
+# Ignore sensitive config files
+api/config.php
+*.env
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
