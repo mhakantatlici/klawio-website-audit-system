@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Klawio Website Audit Tool</title>
+    <link rel="stylesheet" href="audit.css">
+</head>
+<body>
+
+<section class="audit-container">
+    <h1>Free Website Audit</h1>
+    <p>Analyze your site's SEO + Performance using Klawio Engine.</p>
+
+    <form id="klw-audit-form">
+        <input type="url" id="klw-url" placeholder="https://example.com" required>
+        <input type="email" id="klw-email" placeholder="you@example.com" required>
+        <button type="submit">Check My Website</button>
+    </form>
+
+    <div id="klw-status"></div>
+    <div id="klw-results" class="hidden">
+        <h2>Results</h2>
+
+        <div class="score-box">
+            <div>Overall</div><div id="klw-score-overall"></div>
+        </div>
+        <div class="score-box">
+            <div>Performance</div><div id="klw-score-performance"></div>
+        </div>
+        <div class="score-box">
+            <div>SEO</div><div id="klw-score-seo"></div>
+        </div>
+        <div class="score-box">
+            <div>Mobile</div><div id="klw-score-mobile"></div>
+        </div>
+
+        <h3>Key Findings</h3>
+        <ul id="klw-key-findings"></ul>
+    </div>
+
+</section>
+
+<script src="audit.js"></script>
+</body>
+</html>
