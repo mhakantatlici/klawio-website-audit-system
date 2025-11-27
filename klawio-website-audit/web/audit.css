@@ -1,0 +1,41 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 30px;
+}
+
+.audit-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.score-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
