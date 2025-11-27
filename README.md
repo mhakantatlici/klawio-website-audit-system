@@ -1,40 +1,40 @@
-# Klawio Website Audit Tool
+# Klawio Website Audit System
 
-A free & open-source SEO + Performance audit engine.
+A lightweight performance & SEO auditing engine powered by:
+- Google PageSpeed API (Performance)
+- Klawio SEO Engine (Custom 100-point SEO scoring)
+- Auto email reporting
+- Fully PHP-based backend (no Composer required)
+- Works on shared hosting
 
-🔹 Performance Score (Google Lighthouse API  
-🔹 Klawio SEO Engine (100-point analysis)  
-🔹 Key Findings  
-🔹 Email Report  
-🔹 No dependencies  
-🔹 No Composer required  
-🔹 Works on any shared hosting  
-🔹 Frontend + Backend included  
+This project is part of **Klawio Web Agency's automation suite**.
 
 ---
 
-## 🔧 Installation
+## 🚀 Features
 
-1. Clone repo:
-git clone https://github.com/YOURUSER/klawio-website-audit
-2. Go to /api folder
-sample.config.php → config.php
-3. Fill in your own:
-GOOGLE API KEY
-SMTP FROM email
-SMTP TO email
-4. Upload entire folder to hosting.
+### 🔍 Audit Engine
+✔ Performance score (Google Lighthouse)  
+✔ Mobile performance  
+✔ Klawio SEO scoring (100 points)  
+✔ Meta tags parsing  
+✔ Missing tags detection  
+✔ Image ALT scanning  
+✔ Sitemap & robots.txt check  
+✔ Key Findings output  
 
-🧪 API Test
-Visit: yourdomain.com/klawio-website-audit/api/api.php
-Expected: {"error": "URL and email are required"}
+### 📧 Email Reporting
+✔ Audit result sent to customer  
+✔ Audit copy sent to admin  
+✔ Clean HTML email template  
 
-✔ Deployed Features
-Performance auditing
-100-point SEO scoring system
-Image ALT detection
-OG tag scoring
-Canonical detection
-Sitemap & Robots check
-Email reports
-JSON output
+### 🌐 Frontend
+✔ Simple embed-ready HTML widget  
+✔ JavaScript form handler  
+✔ Minimalistic UI  
+✔ Easily insert into WordPress / Elementor / Divi  
+
+---
+
+## 📁 Project Structure
+
