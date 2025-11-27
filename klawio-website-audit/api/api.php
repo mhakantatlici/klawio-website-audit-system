@@ -7,11 +7,11 @@ error_reporting(E_ALL);
 header("Content-Type: application/json");
 
 // CONFIG
-$API_KEY = "AIzaSyCGdKWaO_PWP8_nH-9MEVambhVdW65jars";
+$API_KEY = "GOOGLE_INSIGHT_API_KEY";
 
-$SMTP_TO_YOU   = "mhakantatlici@icloud.com"; 
-$SMTP_FROM     = "hello@klawio.com";
-$SITE_NAME     = "Klawio Web Agency";
+$SMTP_TO_YOU   = "TO_YOU_EMAIL_ADDRESS"; 
+$SMTP_FROM     = "FROM_EMAILADDRESS";
+$SITE_NAME     = "SITE_NAME";
 
 function respond($arr){
     echo json_encode($arr);
